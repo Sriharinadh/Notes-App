@@ -14,7 +14,9 @@ function createNote(text) {
   li.innerText = text;
 
   editbtn.innerText = "Edit";
+  editbtn.classList.add("editt");
   deletebtn.innerText = "Delete";
+  deletebtn.classList.add("delett");
 
   li.append(editbtn);
   li.append(deletebtn);

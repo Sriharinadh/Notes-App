@@ -1,16 +1,15 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #0a2540;
-  color: white;
+  background-color: #bb9457;
 }
 
 
 header {
   text-align: center;
   padding: 15px;
-  background: grey;
-  font-size: 22px;
+  background-color: #a3b18a;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -39,8 +38,8 @@ header {
 
 
 .text {
-  height: 80px;
-  width: 450px;
+  height: 10%;
+  width: 100%;
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -72,20 +71,47 @@ button {
 
 #list li {
   background: #1b3b5f;
+  color: aliceblue;
   margin-top: 10px;
   padding: 10px;
   border-radius: 8px;
   list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 8px;
 }
 
+.editt {
+  background: linear-gradient(to right, rgb(58, 140, 202), grey);
+  width: 40%;
+}
 
-#list li button {
-  margin-right: 5px;
+.delett {
+  background: linear-gradient(to right, rgb(58, 140, 202), grey);
+  width: 40%;
+}
+
+.editt:hover {
+  background: linear-gradient(to right, rgb(93, 173, 113), rgb(10, 138, 218));
+}
+
+.delett:hover {
+  background: linear-gradient(to right, rgb(80, 135, 95), rgb(10, 138, 218));
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 .nheading {
   font-size: 25px;
+}
+
+@media(max-width:600px) {
+  header {
+    font-size: 1rem;
+  }
 }
