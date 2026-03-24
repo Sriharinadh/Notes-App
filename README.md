@@ -1,4 +1,4 @@
-<b>Notes App</b> 
+## Notes App
 
 ## Features
 - Add notes
