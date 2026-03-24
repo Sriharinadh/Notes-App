@@ -35,13 +35,13 @@ function createNote(text) {
 
     if (newText !== null && newText !== "") {
 
-      // update UI
+
       li.firstChild.textContent = newText;
 
-      // update array
+
       notes = notes.map(n => n === text ? newText : n);
 
-      // update localStorage
+
       localStorage.setItem("notes", JSON.stringify(notes));
     }
 
@@ -63,7 +63,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 });
 
-// ✅ add note
+
 btnn.addEventListener("click", () => {
 
   const text = txtt.value;
@@ -82,7 +82,7 @@ btnn.addEventListener("click", () => {
 
 });
 
-// enter key
+
 txtt.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     event.preventDefault();
